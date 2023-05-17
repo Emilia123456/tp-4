@@ -5,10 +5,12 @@ static class Equipos{
     List<string> ListaRemeras {get; private set;}
     Dictionary<string, indumentaria> EquiposIndumentaria {get; private set;} = new Dictionary <string, Indumentaria>();
     //metodos
-    public bool IngresarIndumentaria(string EquipoSeleccionado, Indumentaria item){
-        if(EquiposIn)
-        dicEquiposIndumentaria.Add(EquipoSeleccionado, item);
-
+    public static bool IngresarIndumentaria(string EquipoSeleccionado, Indumentaria item){
+        if(EquiposIndumentaria.ContainsKey(EquipoSeleccionado)){
+            return false; 
+        }else{
+            dicEquiposIndumentaria.Add(EquipoSeleccionado, item);
+            return true;
+        }
     }
-   
 }
