@@ -20,26 +20,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult SelectIndumentaria()
-    {
-        ViewBag.ListaEquipos=lEquipos;
-        ViewBag.ListaMedias=lMedias;
-        ViewBag.ListaPantalones=lPantalones;
-        ViewBag.ListaRemeras=lRemeras;
-        //Cargar las listas de la clase Equipos en ViewBags para poder ser invocados en la View.
-        return View();
-    }
-
-    public IActionResult GuardarIndumentaria ()
-    {
-        /*Debe validar que reciba todos los parámetros requeridos.
-        Carga en un objeto indumentaria la info enviada como parámetro.
-        Carga la indumentaria con el equipo en la clase Equipos
-        En caso que no se hayan recibido los parámetros correctamente vuelve a la view SelectIndumentaria enviando un Mensaje de Error (utilizar ViewBag), en caso contrario vuelve a la pagina Index (Volver a Cargar los ViewBags con las listas de datos.*/
-        
-        return View();
-    }
-
 
     public IActionResult Privacy()
     {
