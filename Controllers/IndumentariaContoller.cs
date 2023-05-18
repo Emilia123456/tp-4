@@ -8,7 +8,7 @@ public class IndumentariaController : Controller
 {
     public IActionResult Index()
     {
-        //ViewBag.induEquipos=IndumentariaEquipos;
+        ViewBag.induEquipos=Equipos.EquiposIndumentaria;
         //Cargar en un ViewBag el diccionario de Indumentarias Equipos
         return View();
     }
