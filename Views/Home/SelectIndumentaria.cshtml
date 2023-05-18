@@ -1,0 +1,12 @@
+@ViewBag.Titulo
+<body>
+    <tr>
+        @for (int i=0; i<10;i++){
+            string medias = "medias" +i;
+            string direcMedias = "..\..\wwwroot\medias" + ViewBag.ListaMedias[i] + ".png";
+            <td class="contenedor-imagen">
+                <img src="@Html.Raw(direcMedias)" alt="Medias">
+            </td>
+        }
+    </tr>
+</body>

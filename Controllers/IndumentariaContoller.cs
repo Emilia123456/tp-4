@@ -8,13 +8,14 @@ public class IndumentariaController : Controller
 {
     public IActionResult Index()
     {
-        ViewBag.IndumentariaEquipos=induEquipos;
+        //ViewBag.induEquipos=IndumentariaEquipos;
         //Cargar en un ViewBag el diccionario de Indumentarias Equipos
         return View();
     }
 
     public IActionResult SelectIndumentaria()
     {
+        ViewBag.Titulo ="Titulo de Ejemplo";
         ViewBag.lEquipos = Equipos.ListaEquipos;
         ViewBag.lMedias = Equipos.ListaMedias;
         ViewBag.lPantalones = Equipos.ListaPantalones;

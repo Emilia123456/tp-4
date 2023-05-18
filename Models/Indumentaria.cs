@@ -7,10 +7,12 @@ class Indumentaria {
     public Indumentaria(){
     }
     //constructor
-    public indumentaria(string Medias, string Pantalon, string Camiseta){
+    public  void indumentaria(string medias, string pantalon, string camiseta){
+
         Medias=medias;
         Pantalon=pantalon; 
         Camiseta=camiseta; 
+
     }
     
 

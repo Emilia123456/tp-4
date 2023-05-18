@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.IndumentariaEquipos=induEquipos;
+        //ViewBag.IndumentariaEquipos=induEquipos;
         //Cargar en un ViewBag el diccionario de Indumentarias Equipos
         return View();
     }
