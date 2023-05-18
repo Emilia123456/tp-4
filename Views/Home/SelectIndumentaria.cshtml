@@ -1,12 +1,26 @@
-@ViewBag.Titulo
-<body>
-    <tr>
+    <ul>
         @for (int i=0; i<10;i++){
-            string medias = "medias" +i;
-            string direcMedias = "..\..\wwwroot\medias" + ViewBag.ListaMedias[i] + ".png";
-            <td class="contenedor-imagen">
+            string direcMedias = @"..\..\wwwroot\medias_" + ViewBag.ListaMedias[i] + ".png";
+            <li class="contenedor-imagen">
                 <img src="@Html.Raw(direcMedias)" alt="Medias">
-            </td>
+            </li>
         }
-    </tr>
-</body>
+    </ul>
+
+    <ul>
+        @for (int i=0; i<10;i++){
+            string direcPantalones = @"..\..\wwwroot\pantalon_" + ViewBag.ListaPantalones[i] + ".png";
+            <li class="contenedor-imagen">
+                <img src="@Html.Raw(direcPantalones)" alt="Pantalones">
+            </li>
+        }
+    </ul>
+
+    <ul>
+        @for (int i=0; i<10;i++){
+            string direcCamiseta = @"..\..\wwwroot\camiseta_" + ViewBag.ListaCamiseta[i] + ".png";
+            <li class="contenedor-imagen">
+                <img src="@Html.Raw(direcCamiseta)" alt="Camisetas">
+            </li>
+        }
+    </ul>
